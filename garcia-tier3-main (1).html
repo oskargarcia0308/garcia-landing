@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your Backyard | Garcia Solutions | El Paso Landscaping Experts</title>
+    <meta name="description" content="Complete outdoor transformations in El Paso. Turf, concrete patios, pergolas, fire pits & more. Professional landscaping that transforms yards into outdoor living spaces.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest-green: #1B5E20;
+            --olive-green: #6B8E23;
+            --sand-beige: #D9C7A3;
+            --charcoal: #333333;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --dark-overlay: rgba(27, 94, 32, 0.85);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--charcoal);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(27, 94, 32, 0.7), rgba(27, 94, 32, 0.8)), 
+            url('img005.jpg') center/cover;
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: 80px 80px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 120px 40px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 62px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            letter-spacing: -1.5px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero-text .highlight {
+            color: var(--sand-beige);
+        }
+
+        .hero-text p {
+            font-size: 22px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .hero-feature svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--sand-beige);
+        }
+
+        /* Form Card */
+        .form-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 45px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .form-card h3 {
+            color: var(--forest-green);
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .form-card p {
+            color: var(--charcoal);
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--charcoal);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--forest-green);
+            box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--forest-green), var(--olive-green));
+            color: white;
+            padding: 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(27, 94, 32, 0.3);
+        }
+
+        .form-note {
+            text-align: center;
+            font-size: 13px;
+            color: #6B7280;
+            margin-top: 15px;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--white);
+            padding: 60px 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 52px;
+            font-weight: 900;
+            color: var(--forest-green);
+            display: block;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: var(--charcoal);
+            font-weight: 600;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 40px;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: rgba(27, 94, 32, 0.1);
+            color: var(--forest-green);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 52px;
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+
+        .section-description {
+            font-size: 20px;
+            color: #6B7280;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Services Grid */
+        .services {
+            background: var(--light-gray);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 35px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 45px;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--forest-green), var(--olive-green));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+            border-color: var(--forest-green);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--forest-green), var(--olive-green));
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(27, 94, 32, 0.25);
+        }
+
+        .service-icon svg {
+            width: 36px;
+            height: 36px;
+            stroke: white;
+            fill: none;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #6B7280;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: var(--charcoal);
+            font-size: 15px;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--forest-green);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Portfolio Gallery */
+        .portfolio {
+            background: var(--white);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--forest-green), var(--olive-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 30px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-overlay h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .portfolio-overlay p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Process Section */
+        .process {
+            background: var(--light-gray);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--forest-green), var(--olive-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 36px;
+            font-weight: 900;
+            color: white;
+            box-shadow: 0 10px 30px rgba(27, 94, 32, 0.3);
+            position: relative;
+        }
+
+        .step-number::after {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border: 3px solid rgba(27, 94, 32, 0.2);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
+
+        .process-step h3 {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+        }
+
+        .process-step p {
+            color: #6B7280;
+            line-height: 1.7;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 35px;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 40px;
+            border-radius: 20px;
+            border-left: 5px solid var(--forest-green);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .stars {
+            color: #FFA500;
+            font-size: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .testimonial-text {
+            font-size: 17px;
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--forest-green), var(--olive-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .author-info h4 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 4px;
+        }
+
+        .author-info p {
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: var(--light-gray);
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--forest-green);
+        }
+
+        .faq-question {
+            padding: 28px 35px;
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--charcoal);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-toggle {
+            font-size: 28px;
+            color: var(--forest-green);
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 35px 28px;
+            font-size: 16px;
+            color: #6B7280;
+            line-height: 1.8;
+            display: none;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--forest-green) 0%, var(--olive-green) 100%);
+            color: white;
+            padding: 100px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: 60px 60px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            font-size: 52px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+
+        .final-cta p {
+            font-size: 22px;
+            margin-bottom: 45px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--forest-green);
+            padding: 22px 55px;
+            border-radius: 50px;
+            font-size: 19px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 50px;
+            padding-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item strong {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 8px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: #9CA3AF;
+            padding: 60px 40px 30px;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h3 {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .footer-col p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .footer-col a {
+            color: #9CA3AF;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 12px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--sand-beige);
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--sand-beige);
+            margin-bottom: 20px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .hero-text h1 {
+                font-size: 48px;
+            }
+
+            .section-title {
+                font-size: 42px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding: 80px 20px 60px;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .hero-text p {
+                font-size: 18px;
+            }
+
+            .form-card {
+                padding: 30px;
+            }
+
+            .section {
+                padding: 70px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .final-cta h2 {
+                font-size: 36px;
+            }
+
+            .contact-methods {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Transform Your <span class="highlight">Front/Back Yard</span> Into an Outdoor Oasis</h1>
+                <p>Complete outdoor transformations in El Paso. From artificial turf and stamped concrete to custom pergolas and fire pits—we build the backyard you've always wanted.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span>Full-Service Design & Build</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span>Fast Project Completion</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span>Low-Maintenance Solutions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h3>Get Your Free Consultation</h3>
+                <p>Tell us about your vision and we'll bring it to life.</p>
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="(915) 555-1234">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project">What are you interested in? *</label>
+                        <select id="project" name="project" required>
+                            <option value="">Select a service...</option>
+                            <option value="turf">Artificial Turf Installation</option>
+                            <option value="concrete">Stamped Concrete Patios</option>
+                            <option value="pergola">Pergolas & Shade Structures</option>
+                            <option value="firepit">Fire Pits & Outdoor Kitchens</option>
+                            <option value="fencing">Fencing & Gates</option>
+                            <option value="complete">Complete Backyard Transformation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell us about your project (optional)</label>
+                        <textarea id="message" name="message" placeholder="I'm looking to transform my backyard with..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Schedule My Free Consultation</button>
+                    
+                    <p class="form-note">We'll call you within 24 hours to discuss your project.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">150+</span>
+                <span class="stat-label">Yards Transformed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">9</span>
+                <span class="stat-label">Years in Business</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfaction Rate</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5★</span>
+                <span class="stat-label">Average Rating</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="section services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2 class="section-title">Complete Outdoor Solutions Under One Roof</h2>
+                <p class="section-description">From concept to completion, we handle every aspect of your outdoor transformation. No subcontractors, no delays—just expert craftmanship.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Artificial Turf Installation</h3>
+                    <p>Premium synthetic grass that stays green year-round with zero maintenance. Perfect for El Paso's climate—no watering, mowing, or brown patches.</p>
+                    <ul class="service-features">
+                        <li>Pet-friendly and durable</li>
+                        <li>Looks and feels like real grass</li>
+                        <li>10-year warranty included</li>
+                        <li>Professional installation in 2-3 days</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <rect x="9" y="9" width="6" height="6"/>
+                            <line x1="9" y1="1" x2="9" y2="4"/>
+                            <line x1="15" y1="1" x2="15" y2="4"/>
+                            <line x1="9" y1="20" x2="9" y2="23"/>
+                            <line x1="15" y1="20" x2="15" y2="23"/>
+                            <line x1="20" y1="9" x2="23" y2="9"/>
+                            <line x1="20" y1="15" x2="23" y2="15"/>
+                            <line x1="1" y1="9" x2="4" y2="9"/>
+                            <line x1="1" y1="15" x2="4" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Stamped Concrete Patios</h3>
+                    <p>Custom-designed patios and porches with decorative stamped patterns. Durable, beautiful, and built to last decades in the desert heat.</p>
+                    <ul class="service-features">
+                        <li>Multiple pattern and color options</li>
+                        <li>Slip-resistant finishes</li>
+                        <li>Heat-reflective coatings available</li>
+                        <li>Seamless integration with landscape</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M3 10h18"/>
+                            <path d="M5 6h14"/>
+                            <path d="M4 14h16"/>
+                            <path d="M6 18h12"/>
+                        </svg>
+                    </div>
+                    <h3>Pergolas & Shade Structures</h3>
+                    <p>Custom-built pergolas, ramadas, and covered patios that provide relief from the El Paso sun while adding architectural beauty to your yard.</p>
+                    <ul class="service-features">
+                        <li>Custom wood or aluminum builds</li>
+                        <li>Integrated lighting options</li>
+                        <li>Built-in fans and misters</li>
+                        <li>Engineered for high winds</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <line x1="9" y1="9" x2="9.01" y2="9"/>
+                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Fire Pits & Outdoor Kitchens</h3>
+                    <p>Create the ultimate entertainment space with custom fire features and outdoor cooking areas. Perfect for year-round enjoyment.</p>
+                    <ul class="service-features">
+                        <li>Gas or wood-burning options</li>
+                        <li>Built-in seating walls</li>
+                        <li>BBQ islands and pizza ovens</li>
+                        <li>Natural stone or stacked block</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Fencing & Gates</h3>
+                    <p>Modern horizontal slat fencing, wrought iron, and custom gates that enhance privacy and curb appeal while complementing your home's architecture.</p>
+                    <ul class="service-features">
+                        <li>Contemporary horizontal designs</li>
+                        <li>Metal, wood, or composite materials</li>
+                        <li>Automated gate systems</li>
+                        <li>Integrated with rock walls</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3>Rock Landscaping</h3>
+                    <p>Desert-style rock gardens, decorative boulders, and river rock installations that reduce water usage while adding natural beauty.</p>
+                    <ul class="service-features">
+                        <li>Low-maintenance desert designs</li>
+                        <li>Native and adapted plants</li>
+                        <li>Decorative rock borders</li>
+                        <li>Erosion control solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">RECENT PROJECTS</span>
+                <h2 class="section-title">See What We've Built for El Paso Families</h2>
+                <p class="section-description">Real transformations from builder-grade yards to stunning outdoor living spaces. These are actual projects we've completed in the past year.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" role="img" aria-label="Backyard — Turf, Pergola & Stamped Concrete Patio" style="background-image: url('img001.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Modern Backyard Oasis</h4>
+                        <p>Complete transformation with turf, stamped concrete, and custom pergola</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image" role="img" aria-label="Front Yard — Turf & Modern Fencing" style="background-image: url('img002.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Front Yard Upgrade</h4>
+                        <p>Artificial turf installation with contemporary horizontal fencing</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image" role="img" aria-label="Covered Patio — Pergola & Stamped Concrete" style="background-image: url('img003.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Covered Entertainment Area</h4>
+                        <p>Custom pergola with integrated lighting and stamped concrete patio</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image" role="img" aria-label="Minimalist Yard — Turf & Rock Border" style="background-image: url('img004.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Clean Modern Design</h4>
+                        <p>Minimalist turf installation with river rock landscaping</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image" role="img" aria-label="Backyard — Full Transformation" style="background-image: url('img005.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Complete Outdoor Living</h4>
+                        <p>Full backyard makeover with turf, patio, pergola, and rock features</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image" role="img" aria-label="Backyard — Fire Pit & Seating" style="background-image: url('img010.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Custom Fire Feature</h4>
+                        <p>Built-in fire pit with concrete seating walls and rock landscaping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">HOW IT WORKS</span>
+                <h2 class="section-title">From Vision to Reality in 4 Simple Steps</h2>
+                <p class="section-description">Our streamlined process ensures your project stays on schedule, on budget, and exceeds your expectations.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Free Consultation</h3>
+                    <p>We visit your property, discuss your vision, take measurements, and provide a detailed quote—all at no cost.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Design</h3>
+                    <p>Our team creates a rendering of your space showing exactly what your finished yard will look like.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Professional Build</h3>
+                    <p>Experienced crews complete your project with precision craftsmanship, clean workmanship, and daily updates.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Final Walkthrough</h3>
+                    <p>We walk you through every detail, ensure you're thrilled with the result, and provide care instructions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">HAPPY CUSTOMERS</span>
+                <h2 class="section-title">What El Paso Homeowners Are Saying</h2>
+                <p class="section-description">Don't just take our word for it—see what your neighbors have to say about working with Garcia Solutions.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Oscar and his team completely transformed our backyard into an amazing outdoor space. The turf looks incredible, the pergola is exactly what we wanted, and they finished in less than two weeks. Professional, clean, and worth every penny."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah Martinez</h4>
+                            <p>East El Paso Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"We got quotes from three companies and Garcia Solutions wasn't the cheapest, but they were the most thorough and professional. So glad we went with them—the stamped concrete patio and outdoor kitchen are absolutely stunning. Friends ask for their contact constantly!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JR</div>
+                        <div class="author-info">
+                            <h4>James Rodriguez</h4>
+                            <p>West El Paso Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The communication was excellent from start to finish. They showed up when they said they would, kept the job site clean, and the final result exceeded our expectations. Our backyard went from dirt and rocks to a beautiful entertaining space in 10 days."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LC</div>
+                        <div class="author-info">
+                            <h4>Lisa Chen</h4>
+                            <p>Northeast El Paso Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"As someone who's very particular about details, I was impressed with their workmanship. The turf installation is flawless, the concrete work is perfect, and the custom fire pit is the centerpiece of our backyard. Highly recommend Garcia Solutions!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MA</div>
+                        <div class="author-info">
+                            <h4>Michael Anderson</h4>
+                            <p>Far East El Paso Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"We've lived in this house for 3 years with a dirt backyard because we couldn't find anyone reliable. Garcia Solutions made the whole process easy and the results speak for themselves. Our kids finally have a real yard to play in!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DR</div>
+                        <div class="author-info">
+                            <h4>David & Rachel Torres</h4>
+                            <p>Socorro Area Homeowners</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The pergola they built is absolutely gorgeous and provides much-needed shade. The quality of materials and construction is top-notch. They even came back to make a small adjustment at no charge. That's customer service!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CP</div>
+                        <div class="author-info">
+                            <h4>Carlos Perez</h4>
+                            <p>Central El Paso Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">COMMON QUESTIONS</span>
+                <h2 class="section-title">Everything You Need to Know</h2>
+                <p class="section-description">We've answered the most common questions about our services, process, and pricing.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does a typical backyard transformation take?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most projects take 1-3 weeks from start to finish depending on scope. Simple turf installations can be completed in 2-3 days, while complete transformations with multiple features typically take 10-14 business days. We provide a detailed timeline during your consultation and keep you updated throughout the project.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's included in the free consultation?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Our free consultation includes an on-site visit, detailed measurements, discussion of your vision and budget, review of material options, and a comprehensive written quote. There's absolutely no obligation—we want you to feel confident in your decision whether you choose us or not.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer financing options?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We work with several financing partners to offer flexible payment plans for qualified customers. Most projects can be financed with approved credit, allowing you to enjoy your new outdoor space now while spreading payments over time. Ask about current promotional rates during your consultation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How much does artificial turf cost?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Turf installation typically ranges from $8-15 per square foot depending on turf quality, area size, and site preparation needs. Most residential backyards (500-1000 sq ft) run $5,000-$12,000 fully installed. We use premium turf with 10-year warranties and include proper drainage, weed barrier, and infill for a professional finish that lasts.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can you work with my HOA requirements?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We're experienced working with El Paso area HOAs and can help navigate approval processes. We'll provide detailed plans, material specifications, and renderings to submit to your HOA if required. We know what most local HOAs approve and can design accordingly.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What happens if I'm not satisfied with the work?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Your satisfaction is our top priority. We conduct a detailed walkthrough before considering any project complete. If something isn't exactly right, we'll fix it—no questions asked. We also provide warranties on materials and workmanship. Our reputation is built on happy customers, and we stand behind every project 100%.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you handle permits and inspections?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we handle all necessary permits and inspections as part of our service. Most landscaping projects don't require permits, but structural work like pergolas and covered patios do. We take care of all the paperwork and ensure everything is done to code so you don't have to worry about it.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I maintain artificial turf?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Turf is incredibly low-maintenance! Simply brush or rake it occasionally to keep fibers upright, rinse with water to remove dust, and spot-clean any pet waste. No mowing, no watering, no fertilizing. We provide complete care instructions and recommend a light cleaning 2-3 times per year for optimal appearance. Your turf will look great for 15-20 years with minimal effort.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Outdoor Space?</h2>
+            <p>Join 150+ El Paso families who trusted Garcia Solutions to turn their yards into stunning outdoor living spaces. Your dream backyard is one consultation away.</p>
+            
+            <a href="#" class="cta-button">Schedule Your Free Consultation</a>
+
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <strong>Call or Text</strong>
+                    <a href="tel:9159962020">(915) 996-2020</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Email Us</strong>
+                    <a href="mailto:oskargarcia0308@gmail.com">oskargarcia0308@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Service Area</strong>
+                    <span style="color: white; font-size: 18px;">All of El Paso, TX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">GARCIA SOLUTIONS</div>
+                <p>Transforming El Paso backyards into outdoor living spaces since 2015. Full-service landscaping, concrete, and outdoor construction.</p>
+                <p style="margin-top: 20px;"><strong>Licensed & Insured</strong></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Services</h3>
+                <a href="#">Artificial Turf</a>
+                <a href="#">Stamped Concrete</a>
+                <a href="#">Pergolas & Ramadas</a>
+                <a href="#">Fire Pits</a>
+                <a href="#">Fencing & Gates</a>
+                <a href="#">Rock Landscaping</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Our Process</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Financing</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <p>📞 <a href="tel:9159962020">(915) 996-2020</a></p>
+                <p>✉️ <a href="mailto:oskargarcia0308@gmail.com">oskargarcia0308@gmail.com</a></p>
+                <p>📍 El Paso, TX</p>
+                <p>🕒 Mon-Sat: 7am-6pm<br>Sun: By Appointment</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Garcia Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Form Submission Handler
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In production, this would send to your email/CRM
+            alert('Thank you! We will contact you within 24 hours to schedule your free consultation.');
+            // Redirect to thank you page
+            // window.location.href = 'thank-you.html';
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all others
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                document.querySelectorAll('.faq-toggle').forEach(t => t.textContent = '+');
+                
+                // Toggle current
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    toggle.textContent = '−';
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
